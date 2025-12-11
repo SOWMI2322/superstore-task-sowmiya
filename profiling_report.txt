@@ -1,0 +1,83 @@
+==== DATA PROFILING REPORT ====
+
+1. Number of rows & columns: (9994, 21)
+2. Column Names & Data Types:
+Row ID             int64
+Order ID          object
+Order Date        object
+Ship Date         object
+Ship Mode         object
+Customer ID       object
+Customer Name     object
+Segment           object
+Country           object
+City              object
+State             object
+Postal Code        int64
+Region            object
+Product ID        object
+Category          object
+Sub-Category      object
+Product Name      object
+Sales            float64
+Quantity           int64
+Discount         float64
+Profit           float64
+dtype: object
+
+3. Missing Value Percentage per Column:
+Row ID           0.0
+Order ID         0.0
+Order Date       0.0
+Ship Date        0.0
+Ship Mode        0.0
+Customer ID      0.0
+Customer Name    0.0
+Segment          0.0
+Country          0.0
+City             0.0
+State            0.0
+Postal Code      0.0
+Region           0.0
+Product ID       0.0
+Category         0.0
+Sub-Category     0.0
+Product Name     0.0
+Sales            0.0
+Quantity         0.0
+Discount         0.0
+Profit           0.0
+dtype: float64
+
+4. Duplicate Records Count: 0
+
+5. Outliers (IQR Method):
+   Sales outliers: 1        731.9400
+3        957.5775
+7        907.1520
+10      1706.1840
+11       911.4240
+          ...    
+9931     683.3320
+9942     998.8200
+9947    1925.8800
+9948    2405.2000
+9968     735.9800
+Name: Sales, Length: 1167, dtype: float64
+   Profit outliers: 1       219.5820
+3      -383.0310
+7        90.7152
+10       85.3092
+13      132.5922
+          ...   
+9957    109.7208
+9962    -67.6704
+9968    331.1910
+9979    153.1152
+9993     72.9480
+Name: Profit, Length: 1881, dtype: float64
+
+6. Relationship Checks (Correlation):
+   Discount vs Profit: -0.2195
+   Sales vs Quantity: 0.2008
+
